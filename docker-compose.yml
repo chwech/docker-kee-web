@@ -4,6 +4,8 @@ services:
   kee_web:
     image: antelle/keeweb
     restart: always
+    volumes:
+      - /home/chwech/docker/docker-kee-web/cert/:/etc/nginx/external/
     networks:
       - default
       - nginx_with_others
