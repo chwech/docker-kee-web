@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+  kee_web:
+    image: antelle/keeweb
+    restart: always
+    networks:
+      - default
+      - nginx_with_others
+      
+networks:
+  nginx_with_others:
+    external: true
