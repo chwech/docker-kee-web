@@ -9,6 +9,8 @@ services:
     networks:
       - default
       - nginx_with_others
+    args:
+      - KEEWEB_CONFIG_URL=https://password.chwech.com/config.json
     environment:
       - KEEWEB_CONFIG_URL=https://password.chwech.com/config.json
       
